@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/example/AgentServer/AgentServer.iml" filepath="$PROJECT_DIR$/example/AgentServer/AgentServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/FileServer/FileServer.iml" filepath="$PROJECT_DIR$/example/FileServer/FileServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library/Library.iml" filepath="$PROJECT_DIR$/Library/Library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/gylib.iml" filepath="$PROJECT_DIR$/.idea/gylib.iml" />
+    </modules>
+  </component>
+</project>
