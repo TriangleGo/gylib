@@ -3,7 +3,6 @@ package logger
 import (
 	"os"
 	"github.com/stvp/go-toml-config"
-	"github.com/kyugao/go-logger/logger"
 )
 
 var (
@@ -14,7 +13,7 @@ var (
 )
 
 func InitLogger(path string) {
-	logger.Infof("Init logger with given config file %s", path)
+	Infof("Init logger with given config file %s", path)
 	loadConfig(path)
 	_, err := os.Stat(logPath)
 	if !os.IsExist(err) {

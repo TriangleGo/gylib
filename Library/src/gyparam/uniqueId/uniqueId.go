@@ -1,6 +1,6 @@
 package uniqueId
 
-import "github.com/sluu99/uuid"
+import "gyuuid"
 
 func GetUUIDWithKey(req map[string]interface{}, key string) (val string, ok bool) {
 	tempVal, ok := req[key]
