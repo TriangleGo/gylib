@@ -2,105 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1dc41a0-157b-4450-a55d-da396af0e26a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/GOPATH__gylib_.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/authcode/auth_code.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/cache.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/cache_config.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/cache_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/file/cache_file.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/message/message.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/message/request.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/message/response.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/token/token.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gylib.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logger/config.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logger/logger.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logger/logger_config.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logger/logger_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mongo/conn.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mongo/mongo.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mongo/mongodb.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/param/basic.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/param/json.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/param/json_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/param/objId/objectId.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/param/time.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/param/uniqueId/uniqueId.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/action/action.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/etcd/config.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/etcd/config_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/etcd/discover.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/etcd/etcd_action_range.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/etcd/etcd_config.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/etcd/etcd_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/etcd/register.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/etcd/register_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/proto/gen.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/proto/service.pb.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/proto/service.proto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/respcode/respcode.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/service/ServiceServer.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/json.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uuid/uuid.go" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/Library.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gycache/authcode/auth_code.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gycache/cache.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gycache/cache_config.conf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gycache/cache_test.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gycache/file/cache_file.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gycache/message/message.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gycache/message/request.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gycache/message/response.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gycache/token/token.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gylogger/config.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gylogger/logger.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gylogger/logger_config.conf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gylogger/logger_test.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gymongo/conn.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gymongo/mongo.conf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gymongo/mongodb.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyparam/basic.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyparam/json.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyparam/json_test.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyparam/objId/objectId.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyparam/time.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyparam/uniqueId/uniqueId.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyservice/action/action.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyservice/etcd/config.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyservice/etcd/config_test.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyservice/etcd/discover.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyservice/etcd/etcd_action_range.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyservice/etcd/etcd_config.conf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyservice/etcd/etcd_test.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyservice/etcd/register.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyservice/etcd/register_test.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyservice/proto/gen.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyservice/proto/service.pb.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyservice/proto/service.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyservice/respcode/respcode.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyservice/service/ServiceServer.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyutil/json.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/src/gyuuid/uuid.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/AgentServer/logs/agent.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/FileServer/logs/file.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/GOPATH__AgentServer_.xml" afterPath="$PROJECT_DIR$/.idea/libraries/GOPATH__AgentServer_.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/GOPATH__FileServer_.xml" afterPath="$PROJECT_DIR$/.idea/libraries/GOPATH__FileServer_.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/GOPATH__Library_.xml" afterPath="$PROJECT_DIR$/.idea/libraries/GOPATH__Library_.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/AgentServer/AgentServer.iml" afterPath="$PROJECT_DIR$/example/AgentServer/AgentServer.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/AgentServer/src/handler/file_handler.go" afterPath="$PROJECT_DIR$/example/AgentServer/src/handler/file_handler.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/AgentServer/src/handler/form_handler.go" afterPath="$PROJECT_DIR$/example/AgentServer/src/handler/form_handler.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/AgentServer/src/main.go" afterPath="$PROJECT_DIR$/example/AgentServer/src/main.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/FileServer/FileServer.iml" afterPath="$PROJECT_DIR$/example/FileServer/FileServer.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/FileServer/src/db/dao/app_dao.go" afterPath="$PROJECT_DIR$/example/FileServer/src/db/dao/app_dao.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/FileServer/src/db/dao/file_dao.go" afterPath="$PROJECT_DIR$/example/FileServer/src/db/dao/file_dao.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/FileServer/src/db/entity/app_version.go" afterPath="$PROJECT_DIR$/example/FileServer/src/db/entity/app_version.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/FileServer/src/main.go" afterPath="$PROJECT_DIR$/example/FileServer/src/main.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/FileServer/src/service/handler/app_handler.go" afterPath="$PROJECT_DIR$/example/FileServer/src/service/handler/app_handler.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/FileServer/src/service/handler/file_handler.go" afterPath="$PROJECT_DIR$/example/FileServer/src/service/handler/file_handler.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/FileServer/src/service/service.go" afterPath="$PROJECT_DIR$/example/FileServer/src/service/service.go" />
     </list>
     <ignored path="gylib.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -157,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/AgentServer/src/main.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
@@ -165,6 +67,16 @@
               <folding>
                 <element signature="e#14#210#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -267,6 +179,7 @@
         <option value="$PROJECT_DIR$/example/AgentServer/src/handler/file_handler.go" />
         <option value="$PROJECT_DIR$/example/AgentServer/src/handler/form_handler.go" />
         <option value="$PROJECT_DIR$/example/AgentServer/src/main.go" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -397,6 +310,7 @@
     <property name="configurable.Module.libraries.is.expanded" value="true" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="do.not.ask.to.change.module.type" value="gylib" />
+    <property name="GO_FMT" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -861,19 +775,35 @@
       <updated>1460353863318</updated>
       <workItem from="1460353864577" duration="2026000" />
       <workItem from="1460446440012" duration="1860000" />
-      <workItem from="1460448564110" duration="1855000" />
+      <workItem from="1460448564110" duration="2750000" />
     </task>
+    <task id="LOCAL-00001" summary="adjust project structure, and components name">
+      <created>1460458764653</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1460458764653</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update root project README.md">
+      <created>1460459015291</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1460459015291</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5741000" />
+    <option name="totallyTimeSpent" value="6636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -883,7 +813,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293348" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -909,19 +839,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adjust project structure, and components name" />
+    <MESSAGE value="Update root project README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update root project README.md" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Library/src/gylogger/logger.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Library/src/gylogger/logger_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1238,6 +1165,14 @@
           <folding>
             <element signature="e#14#210#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
