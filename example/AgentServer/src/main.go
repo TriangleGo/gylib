@@ -4,15 +4,14 @@ import (
 	"github.com/gorilla/mux"
 	"net/http"
 	"handler"
-	"gylogger"
+	"github.com/TriangleGo/gylib/logger"
 	"fmt"
 	"runtime"
-	"gycache"
-	"gyservice/etcd"
+	"github.com/TriangleGo/gylib/cache"
+	"github.com/TriangleGo/gylib/service/etcd"
 )
 
 const service_config_path = "./conf/service.conf"
-
 
 func init() {
 

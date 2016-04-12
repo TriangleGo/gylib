@@ -1,9 +1,9 @@
 package etcd
 
 import (
-	"gylogger"
-	"gyservice/proto"
-	"gyservice/action"
+	"github.com/TriangleGo/gylib/logger"
+	"github.com/TriangleGo/gylib/service/proto"
+	"github.com/TriangleGo/gylib/service/action"
 )
 
 func AddNode(start int, end int, name string) {

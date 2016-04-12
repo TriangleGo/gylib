@@ -1,13 +1,13 @@
 package handler
 
 import (
-	"gycache/message"
-	"gyparam/objId"
-	"gyparam/uniqueId"
-	"gyservice/respcode"
+	"github.com/TriangleGo/gylib/cache/message"
+	"github.com/TriangleGo/gylib/param/objId"
+	"github.com/TriangleGo/gylib/param/uniqueId"
+	"github.com/TriangleGo/gylib/service/respcode"
 	"db/dao"
-	"gycache/file"
-	"gylogger"
+	"github.com/TriangleGo/gylib/cache/file"
+	"github.com/TriangleGo/gylib/logger"
 )
 
 func DeleteFileHandler(req map[string]interface{}) (resp *message.Response) {

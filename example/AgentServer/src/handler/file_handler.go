@@ -2,18 +2,18 @@ package handler
 
 import (
 	"net/http"
-	"gylogger"
+	"github.com/TriangleGo/gylib/logger"
 	"io/ioutil"
-	cFile "gycache/file"
+	cFile "github.com/TriangleGo/gylib/cache/file"
 	"encoding/json"
 	"github.com/gorilla/mux"
 	"golang.org/x/net/context"
 	"fmt"
-	"gyservice/respcode"
-	"gycache/message"
-	"gyservice/etcd"
-	"gyservice/action"
-	"gyservice/proto"
+	"github.com/TriangleGo/gylib/service/respcode"
+	"github.com/TriangleGo/gylib/cache/message"
+	"github.com/TriangleGo/gylib/service/etcd"
+	"github.com/TriangleGo/gylib/service/action"
+	"github.com/TriangleGo/gylib/service/proto"
 )
 
 // 5MB

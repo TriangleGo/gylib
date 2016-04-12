@@ -1,12 +1,12 @@
 package message
 
 import (
-	"gycache"
-	"gyuuid"
+	"github.com/TriangleGo/gylib/cache"
 	"encoding/json"
-	"github.com/kyugao/go-logger/logger"
-	"gyutil"
 	"reflect"
+	"github.com/TriangleGo/gylib/uuid"
+	"github.com/TriangleGo/gylib/logger"
+	"github.com/TriangleGo/gylib/util"
 )
 
 func CheckExists(msgKey string) (bool, error) {

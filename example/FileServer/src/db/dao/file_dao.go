@@ -1,10 +1,10 @@
 package dao
 import (
 	"gopkg.in/mgo.v2/bson"
-	"gymongo"
+	"github.com/TriangleGo/gylib/mongo"
 	"gopkg.in/mgo.v2"
 	"errors"
-	log "github.com/kyugao/go-logger/logger"
+	"github.com/TriangleGo/gylib/logger"
 )
 
 const category = "gridfs"
@@ -19,12 +19,12 @@ func LoadFile(fileId string) (name string, contentType string, content []byte, e
 	gridFS := mongo.GetGridFS(category)
 	gridFile, err := gridFS.OpenId(bson.ObjectIdHex(fileId))
 
-	log.Debugf("find grid file %v, err %v:", gridFile, err)
+	logger.Debugf("find grid file %v, err %v:", gridFile, err)
 	if err == mgo.ErrNotFound {
 		return
 	}
 	name = gridFile.Name()
-	log.Debugf("read filename, ", name)
+	logger.Debugf("read filename, ", name)
 	contentType = gridFile.ContentType()
 	content = make([]byte, gridFile.Size())
 	gridFile.Read(content)
@@ -40,7 +40,7 @@ func SaveFile(name string, contentType string, content []byte) (fileId string, e
 		fileId = file.Id().(bson.ObjectId).Hex()
 		file.SetContentType(contentType)
 		num, err := file.Write(content)
-		log.Debug(num, ":", err)
+		logger.Debug(num, ":", err)
 		file.Close()
 	}
 	return

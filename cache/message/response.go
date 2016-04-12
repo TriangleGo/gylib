@@ -1,6 +1,6 @@
 package message
 
-import "gyservice/respcode"
+import "github.com/TriangleGo/gylib/service/respcode"
 
 type Response struct {
 	respcode.RespCode

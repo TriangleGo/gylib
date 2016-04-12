@@ -1,12 +1,12 @@
 package file
 
 import (
-	"gylogger"
-	"gyuuid"
-	"gycache"
+	"github.com/TriangleGo/gylib/logger"
 	"github.com/garyburd/redigo/redis"
 	"path"
 	"fmt"
+	"github.com/TriangleGo/gylib/cache"
+	"github.com/TriangleGo/gylib/uuid"
 )
 
 const CACHE_FIELD_NAME = "name"

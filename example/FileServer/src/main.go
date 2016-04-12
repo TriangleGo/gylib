@@ -2,11 +2,11 @@ package main
 
 import (
 	"net"
-	"gylogger"
-	"gycache"
-	"gymongo"
-	"gyservice/proto"
-	"gyservice/etcd"
+	"github.com/TriangleGo/gylib/logger"
+	"github.com/TriangleGo/gylib/cache"
+	"github.com/TriangleGo/gylib/mongo"
+	"github.com/TriangleGo/gylib/service/proto"
+	"github.com/TriangleGo/gylib/service/etcd"
 	"service"
 	"google.golang.org/grpc"
 	"fmt"

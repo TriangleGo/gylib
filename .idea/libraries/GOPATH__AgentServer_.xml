@@ -1,62 +1,17 @@
 <component name="libraryTable">
   <library name="GOPATH &lt;AgentServer&gt;">
     <CLASSES>
-      <root url="file://D:/gopath/src/gopkg.in" />
-      <root url="file://D:/gopath/src/github.com" />
-      <root url="file://D:/gopath/src/golang.org" />
-      <root url="file://D:/gopath/src/google.golang.org" />
+      <root url="file://$PROJECT_DIR$/../../../gopkg.in" />
+      <root url="file://$PROJECT_DIR$/../.." />
+      <root url="file://$PROJECT_DIR$/../../../golang.org" />
+      <root url="file://$PROJECT_DIR$/../../../google.golang.org" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
     <excluded>
-      <root url="file://D:/gopath/src/github.com/Wouterbeets/nn/.git" />
-      <root url="file://D:/gopath/src/github.com/NOX73/go-neural-play/.git" />
-      <root url="file://D:/gopath/src/github.com/axgle/mahonia/.git" />
-      <root url="file://D:/gopath/src/github.com/grpc/grpc-go/transport/testdata" />
-      <root url="file://D:/gopath/src/github.com/golang/protobuf/proto/testdata" />
-      <root url="file://D:/gopath/src/github.com/sluu99/uuid/.git" />
-      <root url="file://D:/gopath/src/github.com/grpc/grpc-go/interop/client/testdata" />
-      <root url="file://D:/gopath/src/golang.org/x/net/html/testdata" />
-      <root url="file://D:/gopath/src/github.com/coreos/go-etcd/.git" />
-      <root url="file://D:/gopath/src/golang.org/x/net/html/charset/testdata" />
-      <root url="file://D:/gopath/src/github.com/lib/pq/.git" />
-      <root url="file://D:/gopath/src/github.com/grpc/grpc-go/interop/server/testdata" />
-      <root url="file://D:/gopath/src/github.com/ugorji/go/.git" />
-      <root url="file://D:/gopath/src/github.com/gorilla/mux/.git" />
-      <root url="file://D:/gopath/src/github.com/grpc/grpc-go/testdata" />
-      <root url="file://D:/gopath/src/golang.org/x/net/bpf/testdata" />
-      <root url="file://$PROJECT_DIR$" />
-      <root url="file://$PROJECT_DIR$/Library" />
-      <root url="file://D:/gopath/src/github.com/gorilla/context/.git" />
-      <root url="file://D:/gopath/src/github.com/qor/inflection/.git" />
-      <root url="file://D:/gopath/src/github.com/elgs/gostrgen/.git" />
-      <root url="file://D:/gopath/src/github.com/grpc/grpc-go/examples/route_guide/testdata" />
-      <root url="file://D:/gopath/src/github.com/golang/protobuf/protoc-gen-go/testdata" />
-      <root url="file://D:/gopath/src/github.com/pelletier/go-toml/.git" />
-      <root url="file://D:/gopath/src/golang.org/x/net/http2/testdata" />
-      <root url="file://D:/gopath/src/github.com/stvp/go-toml-config/.git" />
-      <root url="file://D:/gopath/src/github.com/NOX73/go-neural/.git" />
-      <root url="file://D:/gopath/src/google.golang.org/grpc/transport/testdata" />
-      <root url="file://D:/gopath/src/github.com/grpc/grpc-go/.git" />
-      <root url="file://D:/gopath/src/google.golang.org/grpc/interop/client/testdata" />
-      <root url="file://D:/gopath/src/github.com/jinzhu/gorm/.git" />
-      <root url="file://D:/gopath/src/golang.org/x/net/.git" />
-      <root url="file://D:/gopath/src/google.golang.org/grpc/interop/server/testdata" />
-      <root url="file://D:/gopath/src/github.com/garyburd/redigo/.git" />
-      <root url="file://D:/gopath/src/google.golang.org/grpc/.git" />
-      <root url="file://D:/gopath/src/google.golang.org/grpc/test/testdata" />
-      <root url="file://D:/gopath/src/google.golang.org/grpc/examples/route_guide/testdata" />
-      <root url="file://D:/gopath/src/github.com/grpc/grpc-go/test/testdata" />
-      <root url="file://D:/gopath/src/github.com/cheggaaa/pb/.git" />
       <root url="file://$PROJECT_DIR$/example/AgentServer" />
       <root url="file://$PROJECT_DIR$/example/FileServer" />
-      <root url="file://D:/gopath/src/github.com/golang/protobuf/.git" />
-      <root url="file://D:/gopath/src/github.com/kyugao/fsial/.git" />
-      <root url="file://D:/gopath/src/github.com/fxsjy/gonn/.git" />
-      <root url="file://D:/gopath/src/google.golang.org/grpc/testdata" />
-      <root url="file://D:/gopath/src/github.com/kyugao/go-logger/.git" />
-      <root url="file://D:/gopath/src/gopkg.in/mgo.v2/.git" />
-      <root url="file://D:/gopath/src/github.com/acasajus/base64/.git" />
+      <root url="file://$PROJECT_DIR$" />
     </excluded>
   </library>
 </component>

@@ -1,6 +1,6 @@
 package uniqueId
 
-import "gyuuid"
+import "github.com/TriangleGo/gylib/uuid"
 
 func GetUUIDWithKey(req map[string]interface{}, key string) (val string, ok bool) {
 	tempVal, ok := req[key]

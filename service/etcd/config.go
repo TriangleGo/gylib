@@ -3,7 +3,7 @@ package etcd
 import (
 	"github.com/stvp/go-toml-config"
 	"time"
-	"gylogger"
+	"github.com/TriangleGo/gylib/logger"
 	"strings"
 )
 

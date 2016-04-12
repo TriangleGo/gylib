@@ -1,15 +1,15 @@
 package service
 
 import (
-	"gyservice/proto"
+	"github.com/TriangleGo/gylib/service/proto"
 	"golang.org/x/net/context"
-	"gylogger"
 	"encoding/json"
-	"gyservice/respcode"
-	cMsg "gycache/message"
-	"gyservice/action"
+	"github.com/TriangleGo/gylib/service/respcode"
+	cMsg "github.com/TriangleGo/gylib/cache/message"
+	"github.com/TriangleGo/gylib/service/action"
 	"runtime/debug"
-	"gyutil"
+	"github.com/TriangleGo/gylib/logger"
+	"github.com/TriangleGo/gylib/util"
 )
 
 func NewServiceServer() (server *ServiceServer) {

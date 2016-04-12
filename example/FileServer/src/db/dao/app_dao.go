@@ -1,7 +1,7 @@
 package dao
 
 import (
-	"gymongo"
+	"github.com/TriangleGo/gylib/mongo"
 	"db/entity"
 	"gopkg.in/mgo.v2/bson"
 )

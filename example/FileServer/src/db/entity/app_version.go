@@ -2,8 +2,8 @@ package entity
 
 import (
 	"gopkg.in/mgo.v2/bson"
-	"gymongo"
-	"gylogger"
+	"github.com/TriangleGo/gylib/mongo"
+	"github.com/TriangleGo/gylib/logger"
 	"strings"
 	"errors"
 )

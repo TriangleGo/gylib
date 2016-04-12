@@ -1,7 +1,7 @@
 package mongo
 
 import (
-	"gylogger"
+	"github.com/TriangleGo/gylib/logger"
 	"gopkg.in/mgo.v2"
 	"github.com/stvp/go-toml-config"
 )

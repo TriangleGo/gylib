@@ -1,12 +1,12 @@
 package handler
 
 import (
-	"gycache/message"
-	"gyparam"
-	"gyservice/respcode"
+	"github.com/TriangleGo/gylib/cache/message"
+	"github.com/TriangleGo/gylib/param"
+	"github.com/TriangleGo/gylib/service/respcode"
 	"db/dao"
 	"db/entity"
-	"gylogger"
+	"github.com/TriangleGo/gylib/logger"
 )
 
 func CheckAppVersion(req map[string]interface{}) (resp *message.Response) {

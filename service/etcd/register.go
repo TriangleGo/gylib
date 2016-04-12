@@ -3,7 +3,7 @@ package etcd
 import (
 	"github.com/coreos/go-etcd/etcd"
 	"fmt"
-	"github.com/kyugao/go-logger/logger"
+	"github.com/TriangleGo/gylib/logger"
 )
 
 func RegisterService() (err error) {

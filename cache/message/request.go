@@ -1,6 +1,6 @@
 package message
 
-import "gyservice/action"
+import "github.com/TriangleGo/gylib/service/action"
 
 type Request struct {
 	Action action.Action

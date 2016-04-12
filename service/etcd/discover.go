@@ -5,13 +5,13 @@ import (
 	"sync"
 	"sync/atomic"
 	"github.com/coreos/go-etcd/etcd"
-	"gylogger"
+	"github.com/TriangleGo/gylib/logger"
 	"google.golang.org/grpc"
-	"gyservice/proto"
+	"github.com/TriangleGo/gylib/service/proto"
 	"time"
 	"strings"
 	"strconv"
-	"gyutil"
+	"github.com/TriangleGo/gylib/util"
 )
 
 type client struct {

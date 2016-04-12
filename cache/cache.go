@@ -3,7 +3,7 @@ package cache
 import (
 	"github.com/garyburd/redigo/redis"
 	"time"
-	"gylogger"
+	"github.com/TriangleGo/gylib/logger"
 	"github.com/stvp/go-toml-config"
 )
 

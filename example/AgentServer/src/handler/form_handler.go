@@ -1,17 +1,17 @@
 package handler
 
 import (
-	"gyservice/action"
+	"github.com/TriangleGo/gylib/service/action"
 	"golang.org/x/net/context"
 	"encoding/json"
 	"net/http"
 	"github.com/gorilla/mux"
-	"gyservice/etcd"
-	log "github.com/kyugao/go-logger/logger"
-	"gyservice/respcode"
-	"gycache/message"
+	"github.com/TriangleGo/gylib/service/etcd"
+	"github.com/TriangleGo/gylib/logger"
+	"github.com/TriangleGo/gylib/service/respcode"
+	"github.com/TriangleGo/gylib/cache/message"
 	"fmt"
-	"gyservice/proto"
+	"github.com/TriangleGo/gylib/service/proto"
 )
 
 func FormHandler(w http.ResponseWriter, r *http.Request) {
@@ -23,7 +23,7 @@ func FormHandler(w http.ResponseWriter, r *http.Request) {
 	actionCode, ok := action.ActionFromName(actionName)
 	if !ok {
 		tempResp := message.NewResponse()
-		log.Debug("Unsupport function", actionName)
+		logger.Debug("Unsupport function", actionName)
 		tempResp.SetRespCode(respcode.RC_GENERAL_SYS_ERR)
 		tempResp.SetParam("error", fmt.Sprintf("Action %s is not supported", actionName))
 		respByte, _ = json.Marshal(tempResp)
@@ -39,12 +39,12 @@ func FormHandler(w http.ResponseWriter, r *http.Request) {
 		if err != nil {
 			respByte, _ = json.Marshal(respcode.RC_GENERAL_SYS_ERR)
 		} else {
-			log.Debugf("Cached request key %s request: %v", key, request)
+			logger.Debugf("Cached request key %s request: %v", key, request)
 			client, _ := etcd.GetClient(actionCode)
 
 			if client == nil {
 				tempResp := message.NewResponse()
-				log.Debug("Service node is unavailable.")
+				logger.Debug("Service node is unavailable.")
 				tempResp.SetRespCode(respcode.RC_GENERAL_SYS_ERR)
 				tempResp.SetParam("error", fmt.Sprintf("Service node for %s is unavailable.", actionName))
 				respByte, _ = json.Marshal(tempResp)
@@ -52,13 +52,13 @@ func FormHandler(w http.ResponseWriter, r *http.Request) {
 				cachedReq := &proto.Request{}
 				cachedReq.Key = key
 				clientResp, err := client.Serve(context.Background(), cachedReq)
-				log.Debug("response from node:", clientResp, err)
+				logger.Debug("response from node:", clientResp, err)
 				err = message.GetMsg(clientResp.Key, &respByte)
 				if err != nil {
-					log.Debugf("Get cache resp error: %s.", err.Error())
+					logger.Debugf("Get cache resp error: %s.", err.Error())
 					respByte, _ = json.Marshal(respcode.RC_GENERAL_SYS_ERR)
 				} else {
-					log.Debugf("Get cache resp: %s.", string(respByte))
+					logger.Debugf("Get cache resp: %s.", string(respByte))
 				}
 			}
 		}
