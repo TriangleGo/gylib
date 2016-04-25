@@ -20,8 +20,6 @@ const (
 	Action_SaveFile Action = 2
 	Action_LoadFile Action = 3
 	Action_DeleteFile Action = 4
-
-	Action_CheckAppVersion Action = 20
 )
 
 var codeToAction = map[int32]Action{
@@ -30,7 +28,6 @@ var codeToAction = map[int32]Action{
 	int32(Action_SaveFile):Action_SaveFile,
 	int32(Action_LoadFile):Action_LoadFile,
 	int32(Action_DeleteFile):Action_DeleteFile,
-	int32(Action_CheckAppVersion):Action_CheckAppVersion,
 }
 
 var nameToAction = map[string]Action{
@@ -39,7 +36,6 @@ var nameToAction = map[string]Action{
 	"saveFile":Action_SaveFile,
 	"loadFile":Action_LoadFile,
 	"deleteFile":Action_DeleteFile,
-	"checkAppVersion":Action_CheckAppVersion,
 }
 
 var actionToName = map[Action]string{
@@ -47,7 +43,6 @@ var actionToName = map[Action]string{
 	Action_SaveFile:"saveFile",
 	Action_LoadFile:"loadFile",
 	Action_DeleteFile:"deleteFile",
-	Action_CheckAppVersion:"checkAppVersion",
 }
 
 func ActionFromCode(code int32) Action {

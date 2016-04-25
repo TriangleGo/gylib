@@ -1,4 +1,0 @@
-package entity
-
-func init() {
-}

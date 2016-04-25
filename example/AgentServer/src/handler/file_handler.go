@@ -7,13 +7,12 @@ import (
 	cFile "github.com/TriangleGo/gylib/cache/file"
 	"encoding/json"
 	"github.com/gorilla/mux"
-	"golang.org/x/net/context"
 	"fmt"
 	"github.com/TriangleGo/gylib/service/respcode"
 	"github.com/TriangleGo/gylib/cache/message"
 	"github.com/TriangleGo/gylib/service/etcd"
 	"github.com/TriangleGo/gylib/service/action"
-	"github.com/TriangleGo/gylib/service/proto"
+	"github.com/TriangleGo/gylib/service/caller"
 )
 
 // 5MB
@@ -70,21 +69,13 @@ func DownloadHandler(w http.ResponseWriter, r *http.Request) {
 		}
 
 		params := map[string]interface{}{"fileId":fileId}
-		request := &message.Request{Action:action.Action_LoadFile, Params:params}
-		key, err := message.CacheMsg(request)
-		cachedReq := &proto.Request{key}
 
-		clientResp, err := client.Serve(context.Background(), cachedReq)
-		logger.Debug("clientResp:", clientResp)
+		respObj, err := caller.CallObject(params, action.Action_LoadFile)
 		if err == nil {
-			respObj := &message.Response{}
-			err = message.GetMsg(clientResp.Key, respObj)
-			if err == nil {
-				fileId, _ := respObj.Params["fileId"].(string)
-				name, contentType, content, exists = cFile.GetCacheFile(fileId, false)
-			} else {
-				http.NotFoundHandler()
-			}
+			fileId, _ := respObj.Params["fileId"].(string)
+			name, contentType, content, exists = cFile.GetCacheFile(fileId, false)
+		} else {
+			http.NotFoundHandler()
 		}
 	} else {
 		logger.Debug("exists in cache")

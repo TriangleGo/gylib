@@ -11,8 +11,6 @@ import (
 	"github.com/TriangleGo/gylib/service/etcd"
 )
 
-const service_config_path = "./conf/service.conf"
-
 func init() {
 
 	logger.InitLogger("./conf/logger.conf")

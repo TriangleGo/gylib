@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;ProfileServer&gt;">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../gopkg.in" />
+      <root url="file://$PROJECT_DIR$/../.." />
+      <root url="file://$PROJECT_DIR$/../../../golang.org" />
+      <root url="file://$PROJECT_DIR$/../../../google.golang.org" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <excluded>
+      <root url="file://$PROJECT_DIR$/example/AgentServer" />
+      <root url="file://$PROJECT_DIR$/example/FileServer" />
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>
