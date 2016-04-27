@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="GOPATH &lt;gylib&gt;">
+  <library name="GOPATH &lt;lib&gt;">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/../../../gopkg.in" />
       <root url="file://$PROJECT_DIR$/../.." />
@@ -11,6 +11,7 @@
     <excluded>
       <root url="file://$PROJECT_DIR$" />
       <root url="file://$PROJECT_DIR$/example/AgentServer" />
+      <root url="file://$PROJECT_DIR$/lib" />
       <root url="file://$PROJECT_DIR$/example/FileServer" />
     </excluded>
   </library>

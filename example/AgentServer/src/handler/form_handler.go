@@ -1,15 +1,15 @@
 package handler
 
 import (
-	"github.com/TriangleGo/gylib/service/action"
+	"service/action"
 	"encoding/json"
 	"net/http"
 	"github.com/gorilla/mux"
-	"github.com/TriangleGo/gylib/logger"
-	"github.com/TriangleGo/gylib/service/respcode"
-	"github.com/TriangleGo/gylib/cache/message"
+	"logger"
+	"service/respcode"
+	"cache/message"
 	"fmt"
-	"github.com/TriangleGo/gylib/service/caller"
+	"service/caller"
 )
 
 func FormHandler(w http.ResponseWriter, r *http.Request) {
@@ -21,7 +21,7 @@ func FormHandler(w http.ResponseWriter, r *http.Request) {
 	actionCode, ok := action.ActionFromName(actionName)
 	if !ok {
 		tempResp := message.NewResponse()
-		logger.Debug("Unsupport function", actionName)
+		logger.Debug("Unsupport function1111111", actionName)
 		tempResp.SetRespCode(respcode.RC_GENERAL_SYS_ERR)
 		tempResp.SetParam("error", fmt.Sprintf("Action %s is not supported", actionName))
 		respByte, _ = json.Marshal(tempResp)

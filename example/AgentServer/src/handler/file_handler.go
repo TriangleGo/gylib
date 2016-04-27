@@ -2,17 +2,17 @@ package handler
 
 import (
 	"net/http"
-	"github.com/TriangleGo/gylib/logger"
+	"logger"
 	"io/ioutil"
-	cFile "github.com/TriangleGo/gylib/cache/file"
+	cFile "cache/file"
 	"encoding/json"
 	"github.com/gorilla/mux"
 	"fmt"
-	"github.com/TriangleGo/gylib/service/respcode"
-	"github.com/TriangleGo/gylib/cache/message"
-	"github.com/TriangleGo/gylib/service/etcd"
-	"github.com/TriangleGo/gylib/service/action"
-	"github.com/TriangleGo/gylib/service/caller"
+	"service/respcode"
+	"cache/message"
+	"service/etcd"
+	"service/action"
+	"service/caller"
 )
 
 // 5MB
@@ -70,7 +70,7 @@ func DownloadHandler(w http.ResponseWriter, r *http.Request) {
 
 		params := map[string]interface{}{"fileId":fileId}
 
-		respObj, err := caller.CallObject(params, action.Action_LoadFile)
+		respObj, err := caller.CallObject(action.Action_LoadFile, params)
 		if err == nil {
 			fileId, _ := respObj.Params["fileId"].(string)
 			name, contentType, content, exists = cFile.GetCacheFile(fileId, false)

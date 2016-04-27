@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/example/AgentServer/AgentServer.iml" filepath="$PROJECT_DIR$/example/AgentServer/AgentServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/example/FileServer/FileServer.iml" filepath="$PROJECT_DIR$/example/FileServer/FileServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/gylib.iml" filepath="$PROJECT_DIR$/gylib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" />
     </modules>
   </component>
 </project>

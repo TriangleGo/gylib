@@ -9,9 +9,10 @@
     <JAVADOC />
     <SOURCES />
     <excluded>
-      <root url="file://$PROJECT_DIR$/example/AgentServer" />
-      <root url="file://$PROJECT_DIR$/example/FileServer" />
       <root url="file://$PROJECT_DIR$" />
+      <root url="file://$PROJECT_DIR$/example/AgentServer" />
+      <root url="file://$PROJECT_DIR$/lib" />
+      <root url="file://$PROJECT_DIR$/example/FileServer" />
     </excluded>
   </library>
 </component>

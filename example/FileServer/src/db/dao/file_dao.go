@@ -1,10 +1,10 @@
 package dao
 import (
 	"gopkg.in/mgo.v2/bson"
-	"github.com/TriangleGo/gylib/mongo"
+	"mongo"
 	"gopkg.in/mgo.v2"
 	"errors"
-	"github.com/TriangleGo/gylib/logger"
+	"logger"
 )
 
 const category = "gridfs"

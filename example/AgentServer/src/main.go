@@ -4,18 +4,18 @@ import (
 	"github.com/gorilla/mux"
 	"net/http"
 	"handler"
-	"github.com/TriangleGo/gylib/logger"
+	"logger"
 	"fmt"
 	"runtime"
-	"github.com/TriangleGo/gylib/cache"
-	"github.com/TriangleGo/gylib/service/etcd"
+	"cache"
+	"service/etcd"
 )
 
 func init() {
 
 	logger.InitLogger("./conf/logger.conf")
 	cache.InitCache("./conf/cache.conf")
-	etcd.InitEtcd("./conf/etcd.conf")
+	etcd.InitEtcd("./conf/etcd.conf", nil)
 	r := mux.NewRouter()
 	r.HandleFunc("/f/{action}", handler.FormHandler).Methods("POST")
 	r.HandleFunc("/file/upload", handler.UploadHandler).Methods("POST")

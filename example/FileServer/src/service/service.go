@@ -1,10 +1,10 @@
 package service
 
 import (
-	"github.com/TriangleGo/gylib/logger"
-	"github.com/TriangleGo/gylib/service/action"
+	"logger"
+	"service/action"
 	"service/handler"
-	sServer "github.com/TriangleGo/gylib/service/server"
+	sServer "service/server"
 )
 
 func InitServer() *sServer.ServiceServer {

@@ -2,21 +2,22 @@ package main
 
 import (
 	"net"
-	"github.com/TriangleGo/gylib/logger"
-	"github.com/TriangleGo/gylib/cache"
-	"github.com/TriangleGo/gylib/mongo"
-	"github.com/TriangleGo/gylib/service/proto"
-	"github.com/TriangleGo/gylib/service/etcd"
+	"logger"
+	"cache"
+	"mongo"
+	"service/proto"
+	"service/etcd"
 	"service"
 	"google.golang.org/grpc"
 	"fmt"
+	"service/action"
 )
 
 func init() {
 	logger.InitLogger("./conf/logger.conf")
 	cache.InitCache("./conf/cache.conf")
 	mongo.InitMongo("./conf/mongo.conf")
-	etcd.InitEtcd("./conf/etcd.conf")
+	etcd.InitEtcd("./conf/etcd.conf", action.File_service_range)
 }
 
 func main() {
