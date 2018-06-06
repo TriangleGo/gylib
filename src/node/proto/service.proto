@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package proto;
+
+message Message {
+    string Action = 1;
+    string Key = 2;
+}
+
+service Node {
+    rpc Call(Message) returns (Message) {};
+}
