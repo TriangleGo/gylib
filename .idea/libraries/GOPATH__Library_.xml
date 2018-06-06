@@ -2,13 +2,12 @@
   <library name="GOPATH &lt;Library&gt;">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/../.." />
-      <root url="file://$PROJECT_DIR$/../../../golang.org" />
+      <root url="file://$USER_HOME$/golang.org" />
     </CLASSES>
-    <JAVADOC />
     <SOURCES />
     <excluded>
-      <root url="file://$PROJECT_DIR$/example/AgentServer" />
-      <root url="file://$PROJECT_DIR$/example/FileServer" />
+      <root url="file://$PROJECT_DIR$/src/examples/AgentServer" />
+      <root url="file://$PROJECT_DIR$/src/examples/FileServer" />
       <root url="file://$PROJECT_DIR$/Library" />
       <root url="file://$PROJECT_DIR$" />
     </excluded>
